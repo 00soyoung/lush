@@ -1,0 +1,101 @@
+/*초기설정 원래 reset.css,header,footer << 써야하지만 일단 */
+
+/*webFont*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+html {
+	overflow: hidden;
+}
+
+html, body {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+
+}
+
+*{margin: 0px; padding:0px; color: #333;}
+li {list-style: none}
+a{text-decoration: none;}
+img{border: none;}
+
+
+/*!*메인*!*/
+.header{
+	height: 70px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	padding: 1rem;
+	color: white;
+	background: #fff;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99999;
+
+}
+.header >.inner{
+	border: 0px solid red;
+	width:1300px;
+	height: 30px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.inner .userGroup{
+	width: 11%;
+	border: 0px solid yellow;
+	display: flex;
+	justify-content: space-between;
+}
+.inner .menuGroup{
+	width: 50%;
+	border: 0px solid yellow;
+	display: flex;
+	justify-content: space-between;
+}
+
+.userGroup li{
+	border: 0px solid #fff;
+	background: #333333;
+	width: 30px;
+	height: 30px;
+}
+
+.menuGroup li a{
+	font-family: 'Noto Sans KR';
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+
+.section {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border: 1px solid red;
+}
+
+#section1 {
+	background-color: aliceblue;
+}
+
+#section2 {
+	background-color: lightpink;
+}
+
+#section3 {
+	background-color: coral;
+}
+
+#section4 {
+	background-color: aqua;
+}
+#section5 {
+	background-color: green;
+}
