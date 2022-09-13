@@ -1,0 +1,14 @@
+/*common.css*/
+
+.header{
+    width: 100%;
+    height:100px;
+    background-color: #fff;
+}
+.footer{
+    width: 100%;
+    height: 260px;
+    background-color: #444;
+    position: absolute;
+    bottom: 1px;
+}

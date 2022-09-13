@@ -1,0 +1,10 @@
+/*lushStyle.css*/
+
+h2{color:#fff;}
+.s0{
+    border: 0px solid red;
+    background: url("../images/main/mainVisual.png");
+}
+.s1{
+    border: 1px solid red;
+}
