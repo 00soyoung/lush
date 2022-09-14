@@ -8,3 +8,25 @@ h2{color:#fff;}
 .s1{
     border: 1px solid red;
 }
+.inner-01{
+    border: 2px solid blue;
+}
+.title-01 img{width: 12%;}
+.title-01>li{text-align: center;}
+.title-01 li.txt{
+    font-family: 'Noto Sans KR';
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing:-0.9px;
+    color:#888;
+}
+.title-01{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+.tabMenu{
+    border: 1px solid red;
+    height: 500px;
+}
+.con-02-banner a>img{width: 75%;}

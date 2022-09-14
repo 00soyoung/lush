@@ -7,16 +7,50 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/import.css">
+    <!--폰트 페이지 최종적으로 완성되면 css로 정리-->
+    <link href="//font.elice.io/EliceDigitalBaeum.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="js/fullpage.min.js"></script>
 </head>
 <body>
 <div id="full-page">
     <div class="section s0">
-        <div class="header"></div>
+        <div class="header">
+            <div class="basicsInner h_inner">
+                <ul class="userGroup">
+                    <li><a href="#"><img src="images/main/icon01.png" alt="마이페이지"></a></li>
+                    <li><a href="#"><img src="images/main/icon02.png" alt="찜한목록"></a></li>
+                    <li><a href="#"><img src="images/main/icon03.png" alt="장바구니"></a></li>
+                </ul>
+                <ul class="menuGroup">
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">러쉬제품</a></li>
+                    <li><a href="#">선물하기</a></li>
+                    <li><a href="#">스파</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </div>
+        </div>
         <h2>Section 0</h2>
     </div>
     <div class="section s1">
         <h2>Section 1</h2>
+        <div class="basicsInner inner-01">
+            <ul class="title-01">
+                <li><img src="images/main/conTilte01.png" alt="컨텐츠-01제목"></li>
+                <li class="txt">많은 분들께 사랑받는 제품들</li>
+            </ul>
+            <div class="con-01">
+                <ul class="tabMenu">
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="con-02-banner center">
+                <a href="#"><img src="images/main/banner.png" alt="배너이미지"></a>
+            </div>
+        </div>
     </div>
     <div class="section s2">
         <h2>Section 2</h2>
@@ -30,6 +64,7 @@
     </div>
 </div>
 
+<!-- fullpage 관련 스크립트 -->
 <script>
     new fullpage('#full-page',{
         licenseKey:'',
