@@ -1,32 +1,145 @@
 /*lushStyle.css*/
 
-h2{color:#fff;}
+h2{color:#555;}
 .s0{
     border: 0px solid red;
     background: url("../images/main/mainVisual.png");
 }
-.s1{
-    border: 1px solid red;
+.s4{
+    border:2px solid red;
+    background: url("../images/main/background.png") no-repeat 0 0;
 }
-.inner-01{
-    border: 2px solid blue;
-}
-.title-01 img{width: 12%;}
-.title-01>li{text-align: center;}
-.title-01 li.txt{
+
+.title img{width: 12%;}
+.title>li{text-align: center;}
+.title li.txt{
     font-family: 'Noto Sans KR';
     font-size: 1rem;
     font-weight: 400;
     letter-spacing:-0.9px;
-    color:#888;
+    color:#444;
 }
-.title-01{
-    border: 1px solid red;
+.title li.txt02{
+    font-family: 'Noto Sans KR';
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing:-0.9px;
+    color:#000;
+    padding-bottom: 15px;
+}
+.title{
+    border: 0px solid red;
     display: flex;
     flex-direction: column;
+    padding-bottom: 40px;
 }
+
+/*---Right&Left_tapMenu---*/
 .tabMenu{
-    border: 1px solid red;
-    height: 500px;
+    border: 0px solid red;
+    margin-bottom: 130px;
 }
+.tabMenu input[id*="slide"]{
+    display:none;
+}
+.slideWrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+.slideList{
+    white-space: nowrap;
+    font-size:0;
+}
+.slideList>li{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all 0.6s;
+}
+.slideList>li>a{
+    display: block;
+    position: relative;
+}
+.slideList>li>a>img{width: 24%;}
+.slideList label{
+    position:absolute;
+    z-index:10;
+    top:50%;
+    transform: translateY(-41%);
+    padding:50px;
+    cursor:pointer;
+}
+.slideList .right{
+    right:0px;
+    background:url("../images/main/rBtn.png") no-repeat 0 0 /80%;
+}
+.slideList .left{
+    left:-33px;
+    background:url("../images/main/lBtn.png")no-repeat 0 0 /80%;
+}
+.tabMenu [id="slide01"]:checked ~ .slideWrap .slideList > li {transform: translateX(2%);}
+.tabMenu [id="slide02"]:checked ~ .slideWrap .slideList > li {transform: translateX(-98%);}
 .con-02-banner a>img{width: 75%;}
+
+
+/*--menuTap---*/
+.inner-01{
+    margin-top:20px;
+}
+.tab_content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tab_content input[type="radio"]{
+    display: none;
+}
+.tab_content .conbox{
+    white-space: nowrap;
+    display:none;
+}
+.tab_content .btn{
+    padding:7px;
+    text-align: center;
+}
+.allVeiw{
+    border: 0px solid red;
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+}
+.allVeiw>button{
+    border-style: none;
+    width: 150px;
+    height: 50px;
+    padding: 11px 10px 10px 10px;
+    margin: 5px;
+    cursor:pointer;
+    font-weight: 400;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.btn label[for*="tab"]{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    padding: 12px 10px 10px 10px;
+    background:#F2F2F2;
+    margin: 5px;
+    cursor:pointer;
+    font-weight: 400;
+    color:#8b8b8b;
+}
+.tab_content .btn_02{
+    margin-bottom: 50px;
+}
+.sizeFix{width:25%;}
+
+.tab_content input[id="tab06"]:checked ~ .con1{display: block;}
+.tab_content input[id="tab07"]:checked ~ .con2{display: block;}
+.tab_content input[id="tab08"]:checked ~ .con3{display: block;}
+
+.tab_content input[id="tab06"]:checked ~ .btn > label[for="tab06"]{background:#333333; color:#fff; font-weight: 500;}
+.tab_content input[id="tab07"]:checked ~ .btn > label[for="tab07"]{background:#333333; color:#fff; font-weight: 500;}
+.tab_content input[id="tab08"]:checked ~ .btn > label[for="tab08"]{background:#333333; color:#fff; font-weight: 500;}
+
