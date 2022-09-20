@@ -1,15 +1,32 @@
 /*lushStyle.css*/
 
-h2{color:#555;}
+
+/*--메인 비주얼--*/
 .s0{
     border: 0px solid red;
-    background: url("../images/main/mainVisual.png");
+    background: url("../images/main/mainVisual.png") no-repeat 0 0;
 }
-.s4{
+.v_Title{
+    height: 80%;
+    text-align: center;
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.v_Title>li:nth-child(1){
     border:0px solid red;
-    background: url("../images/main/background.png") no-repeat 0 0;
+    font-size:50px;
+    color:#fff;
+    font-family: 'CWDangamAsac-Bold'
+}
+.v_Title>li:nth-child(2){
+    border:0px solid red;
+    color:#fff;
+    font-size:18px;
 }
 
+/* 컨텐츠 제목 */
 .title img{width: 12%;}
 .title>li{text-align: center;}
 .title li.txt{
@@ -31,10 +48,12 @@ h2{color:#555;}
     border: 0px solid red;
     display: flex;
     flex-direction: column;
-    padding-bottom: 40px;
+    padding:40px 0px 40px 0px;
 }
 
-/*---Right&Left_tapMenu---*/
+
+/*---con_01_Lush---*/
+
 .tabMenu{
     border: 0px solid red;
     margin-bottom: 130px;
@@ -83,7 +102,7 @@ h2{color:#555;}
 .con-02-banner a>img{width: 75%;}
 
 
-/*--menuTap---*/
+/*--con_02_러쉬 Plck!---*/
 .inner-01{
     margin-top:20px;
 }
@@ -143,7 +162,9 @@ h2{color:#555;}
 .tab_content input[id="tab07"]:checked ~ .btn > label[for="tab07"]{background:#333333; color:#fff; font-weight: 500;}
 .tab_content input[id="tab08"]:checked ~ .btn > label[for="tab08"]{background:#333333; color:#fff; font-weight: 500;}
 
-/*--plus--*/
+
+
+/*--con_03_plus--*/
 .roseJam{
     justify-content: flex-end;
     margin-top:55px;
@@ -151,7 +172,13 @@ h2{color:#555;}
 .txt03{margin:43px 0px 0px 49px;}
 .txt04{margin:85px 130px 0px 0px;}
 
-/*--Review--*/
+
+
+/*--con_04_Review--*/
+.s4{
+    border:0px solid red;
+    background: url("../images/main/background.png") no-repeat 0 0;
+}
 .viewGroup{
     justify-content: center;
     cursor:pointer;
